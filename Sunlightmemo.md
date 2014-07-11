@@ -44,6 +44,5 @@ What are widgets?
 	people to include your widget on their pages. In order for someone to embed 
 	this widget on their web page we need to provide them code..  We can develop 
 	one that allows that person/organization/company to do that with just two HTML 
-	tags: one script tag to load the widget and one container tag (div for example ) 
-	for them to determine the placement of that widget on their page.
+	tags: one script tag to load the widget and one container tag (div for example ) for them to determine the placement of that widget on their page.
 
