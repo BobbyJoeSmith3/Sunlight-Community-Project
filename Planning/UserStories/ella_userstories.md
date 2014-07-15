@@ -1,0 +1,3 @@
+DOC: ella_userstories.md
+AUTHOR: Bobby Joe Smith III
+DESCRIPTION: These are the userstories for the Embeddable Legislative Alerts widget "Ella". Ella is a widget that uses the Sunlight Foundation's Scout tool; Scout makes it easy for anyone to follow the latest information on bills on a federal and state level as well as court opinions, federal regulations, oversight reports and speeches in Congress. Ella takes the "collections" Scout users create and allows them to embed a timeline of recent legislative and other activities on their own webplatform.  
