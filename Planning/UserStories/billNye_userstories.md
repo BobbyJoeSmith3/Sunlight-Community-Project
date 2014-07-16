@@ -5,6 +5,7 @@ DESCRIPTION: Many organizations have bill tracking pages with static information
 User Stories
 =================================================
 
-1.  As a sunlight staff member, I want users of our site to be able to be able to connect with our API without going on our site.
-2. As a community organizer, I want to follow the latest status changes to a bill 	that will impact the issue that I'm working on.
-3. As a community organizer,  I want to follow all recent bills that my representatives are sponsoring.  
+1.  As a sunlight staff member, I want users of our site to be able to receive a well displayed layout of API calls on their site.
+2. As a community organizer, I want my members to follow the latest status changes to a bill that will impact the issue that we are working on.
+3. As a community organizer,  I want to be updated recent bills that my representatives are sponsoring on my organization's website.  
+4.  As a web developer at a non-profit, I want to easily embed a widget into my website.
