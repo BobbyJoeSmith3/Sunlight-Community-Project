@@ -18,7 +18,7 @@ Back-End::
    want to display (backend)
 
 Front-End::
-(1) The data from the API request will be displayed on the front-end through an HTML 	 template
+(1) The data from the API request will be displayed on the front-end through an HTML template
 (2)	Determine the sizes of the frame
 (3)	Style the template(s) for the iframe you plan to offer
 

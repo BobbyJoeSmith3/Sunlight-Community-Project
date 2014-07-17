@@ -1,5 +1,5 @@
 DOC: billNye_userstories.md
-AUTHOR:  Selina Musuta
+AUTHOR and Project Lead:  Selina Musuta
 DESCRIPTION: Many organizations have bill tracking pages with static information about legislation they care about. Using the data from Open States and OpenCongress, fellows will develop a bill tracker that provides updated and relevant information about the selected bills such as bill name, number, sponsors, status, and summary.
 
 User Stories
