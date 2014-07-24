@@ -14,8 +14,7 @@ Design, Develop, Test, Deploy a web app that makes API calls:
 Back-End::
 
 (1)Makes API calls with parameters set by the user
-(2)The user receives the results from the API request and slice out/up the data you 
-   want to display (backend)
+(2)The user receives the results from the API request and slice out/up the data they want to display (backend)
 
 Front-End::
 (1) The data from the API request will be displayed on the front-end through an HTML template

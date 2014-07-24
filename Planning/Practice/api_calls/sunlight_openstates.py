@@ -20,4 +20,10 @@ s = requests.get("http://openstates.org/api/v1/bills/", params=params)
 
 json_response = s.text
 
+print json_response 
+
+
+
+
+
 
