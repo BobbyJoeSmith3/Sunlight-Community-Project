@@ -39,7 +39,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/SeestheEnemy/Code/gitrepos/Sunlight-Community-Project/Ella/venv"
+VIRTUAL_ENV="/Users/SeestheEnemy/Code/Sunlight-Community-Project/Ella/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
