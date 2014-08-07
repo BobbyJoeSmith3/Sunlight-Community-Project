@@ -18,4 +18,4 @@ def getScoutCollectionData():
 	# Parse the rss_url
 	d = feedparser.parse(rss_url)
 	# Display the title of the first post
-	d.entries[0].title
+	return d.entries[0].title
