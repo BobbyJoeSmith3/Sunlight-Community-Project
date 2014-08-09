@@ -17,12 +17,16 @@ def getScoutCollectionData():
 	rss_url = "feed:https://scout.sunlightfoundation.com/user/53cfcc6a0311036a060003be/native-america.rss"
 	# Parse the rss_url
 	d = feedparser.parse(rss_url)
-	# Display the title of the first post
-	#return d.entries[0].title
-	#Create an empty bucket
-	titles = []
-	# Fill up the bucket
+	# Create an empty list to put the dictionaries in
+	posts = []
+	# Fill up the empty list posts with dictionaries
 	for entry in d.entries:
-		titles.append(entry.title)
+		# Create a dictionary for each post with title, pubdate, and content
+		post = {}
+		# Assign each key
+		post['title'] = entry.title
+		post['pub_date'] = entry.published
+		post['description'] = entry.description
+		posts.append(post)
 	# Return the bucket
-	return titles
+	return posts
