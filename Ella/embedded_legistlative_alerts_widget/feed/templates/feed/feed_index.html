@@ -9,8 +9,9 @@
 	<h1> We are connected! This is the feed page </h1>
 	<h3> All of the titles: </h3>
 	<ul>
+		<!-- display each title for all of the entries -->
 		{% for title in collection_data %}
-		<li> {{ title }} </li>
+		<li><h4> {{ title }} <h4></li>
 		{% endfor %}
 	</ul>
 
