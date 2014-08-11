@@ -1,1 +1,10 @@
-h1 {color: green;}
+h1 	{
+	color: green;
+}
+
+/* Post title styling */
+h2	{
+	color: #635F5C;
+	font-family: "Helvetica Neue";
+	font-size: 34px;
+}

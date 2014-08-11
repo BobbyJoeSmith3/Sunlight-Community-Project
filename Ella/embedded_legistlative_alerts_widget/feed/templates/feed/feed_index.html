@@ -11,13 +11,13 @@
 	<ol>
 		<!-- display each title for all of the entries -->
 		{% for post in collection_data %}
-		<li><h4> {{ post.title }} </h4></li>
+		<li><h2> {{ post.title }} </h2></li>
 			<ul>
 				<!-- display publication date for all entries -->
-				<li> {{ post.pub_date }} </li>
+				<li><p> {{ post.pub_date }} <p></li>
 				<!-- display content for all entries. -->
 				<!-- turning off autoescape to execute embedded html -->
-				<li> {% autoescape off %} {{ post.description }} {% endautoescape %}</li>
+				<li><p> {% autoescape off %} {{ post.description }} {% endautoescape %} <p></li>
 			</ul>	
 		{% endfor %}
 	</ol>
