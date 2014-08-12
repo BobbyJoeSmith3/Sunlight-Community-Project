@@ -7,4 +7,12 @@ h2	{
 	color: #635F5C;
 	font-family: "Helvetica Neue";
 	font-size: 34px;
+	font-weight: 300;
 }
+
+/* Post description and post date styling */
+p 	{
+	color: #76716E;
+	font-family: "Helvetica Neue";
+	font-size: 13pt;
+} 
