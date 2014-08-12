@@ -1,6 +1,7 @@
 # Import requests
 from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
+from forms import WidgetGenerator
 import feedparser
 
 # Create your views here.
