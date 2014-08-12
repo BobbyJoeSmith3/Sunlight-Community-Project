@@ -16,3 +16,8 @@ p 	{
 	font-family: "Helvetica Neue";
 	font-size: 13pt;
 } 
+
+/* Post border styling */
+.container	{
+	border: solid 3px #F5F6F3;
+}

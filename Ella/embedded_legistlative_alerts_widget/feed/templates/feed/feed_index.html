@@ -8,19 +8,21 @@
 <body>
 	<h1> We are connected! This is the feed page </h1>
 	<h3> All of the titles: </h3>
-	<ol>
-		<!-- display each title for all of the entries -->
-		{% for post in collection_data %}
-		<li><h2> {{ post.title }} </h2></li>
-			<ul>
-				<!-- display publication date for all entries -->
-				<li><p> {{ post.pub_date }} <p></li>
-				<!-- display content for all entries. -->
-				<!-- turning off autoescape to execute embedded html -->
-				<li><p> {% autoescape off %} {{ post.description }} {% endautoescape %} <p></li>
-			</ul>	
-		{% endfor %}
-	</ol>
+	<!-- display each title for all of the entries -->
+	{% for post in collection_data %}
+	<!-- The border around each post -->
+	<div class="container">
+	<li><h2> {{ post.title }} </h2></li>
+		<ul>
+			<!-- display publication date for all entries -->
+			<li><p> {{ post.pub_date }} <p></li>
+			<!-- display content for all entries. -->
+			<!-- turning off autoescape to execute embedded html -->
+			<li><p> {% autoescape off %} {{ post.description }} {% endautoescape %} <p></li>
+		</ul>	
+	</div>
+	{% endfor %}
+	
 
 </body>
 </html>
