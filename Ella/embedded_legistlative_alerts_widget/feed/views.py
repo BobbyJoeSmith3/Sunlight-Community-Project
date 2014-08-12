@@ -30,3 +30,9 @@ def getScoutCollectionData():
 		posts.append(post)
 	# Return the bucket
 	return posts
+
+# A function that will take user inputs to generate code for an iframe
+#def generateiFrame():
+	#rss_url = raw_input('Paste the rss URL for your SCOUT collection:')
+	#frame_width = raw_input('What is your desired width in pixels for the iframe?:')
+	#frame_height = raw_input('What is your desired height in pixels for the iframe?:')
