@@ -32,8 +32,20 @@ def getScoutCollectionData():
 	# Return the bucket
 	return posts
 
+
+# Connect to widget generator template
+def widget_generator(request):
+	return HttpResponse("This is the widget_generator page")
+	'''
+	variable = generateiFrame()
+	return render(request, 'feed/widget_gen.html', {'variable': variable})
+	'''
+
+'''
 # A function that will take user inputs to generate code for an iframe
-#def generateiFrame():
-	#rss_url = raw_input('Paste the rss URL for your SCOUT collection:')
-	#frame_width = raw_input('What is your desired width in pixels for the iframe?:')
-	#frame_height = raw_input('What is your desired height in pixels for the iframe?:')
+def generateiFrame():
+	rss_url = raw_input('Paste the rss URL for your SCOUT collection:')
+	frame_width = raw_input('What is your desired width in pixels for the iframe?:')
+
+	frame_height = raw_input('What is your desired height in pixels for the iframe?:')
+	'''
