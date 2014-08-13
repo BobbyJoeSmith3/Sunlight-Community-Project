@@ -7,7 +7,7 @@ import feedparser
 # Create your views here.
 
 # Connect to the feed app template
-def index(request):
+def feed_index(request):
 	# Create a variable collection_data for the getScoutCollectionData function below to getting the data to the html template
 	collection_data = getScoutCollectionData()
 	return render(request, 'feed/feed_index.html', {'collection_data': collection_data})
