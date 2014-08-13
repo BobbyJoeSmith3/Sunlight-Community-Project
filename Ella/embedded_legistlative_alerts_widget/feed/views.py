@@ -35,7 +35,7 @@ def getScoutCollectionData():
 
 # Connect to widget generator template
 def widget_generator(request):
-	return HttpResponse("This is the widget_generator page")
+	return render(request, 'feed/widget_gen.html')
 	'''
 	variable = generateiFrame()
 	return render(request, 'feed/widget_gen.html', {'variable': variable})
