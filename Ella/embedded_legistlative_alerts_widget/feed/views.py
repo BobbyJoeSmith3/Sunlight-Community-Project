@@ -3,6 +3,7 @@ from django.http import HttpResponseRedirect, HttpResponse
 from django.shortcuts import render
 from forms import WidgetGenerator
 import feedparser
+import requests
 
 # Create your views here.
 
@@ -35,12 +36,16 @@ def getScoutCollectionData():
 
 # Connect to widget generator template
 def widget_generator(request):
+	#Connect to the widget generator form
 	form = WidgetGenerator()
+	#Validate that the info the user entered into the form is valid
 	if request.method == 'POST':
 		form = WidgetGenerator(request.POST)
-	if form.is_valid():
-		rss_url = form.cleaned_data['rss_url']
-		frame_height = form.cleaned_data['frame_height']
-		frame_width = form.cleaned_data['frame_width']
+		if form.is_valid():
+			rss_url = form.cleaned_data['rss_url']
+			frame_height = form.cleaned_data['frame_height']
+			frame_width = form.cleaned_data['frame_width']
+			#Generate the HTML code to create the widget based on the the information the user entered
+			widget_code = "<iframe src='" + "http://127.0.0.1:8000/feed/" + "' height='" + frame_height + "' width='" + frame_width + "'></iframe>"
 	return render(request, 'feed/widget_gen.html', {'form': form})
 
