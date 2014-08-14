@@ -4,12 +4,15 @@
 </head>
 
 <body>
-	<h1> Hello, world! </h1>
+	<h1> Embedded Legislative Alerts Widget Generator </h1>
 	<form action="" method="post"/>
 		{% csrf_token %}
+		<h3> Paste the url for your SCOUT collection's RSS feed: </h3> 
 		<p> {{form.rss_url}} </p>
-		<p> {{form.frame_height}} </p>
-		<p> {{form.frame_width}} </p>
+		<h3> Determine the desired height in pixels for your widget: </h3>
+		<p> {{form.frame_height}}px</p>
+		<h3> Determine the desired width in pixels for your widget: </h3>
+		<p> {{form.frame_width}}px</p>
 		<input type="submit" value="submit"/>
 
 </body>
