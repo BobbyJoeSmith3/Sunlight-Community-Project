@@ -68,7 +68,9 @@ def widget_generator(request):
 			rss_url = form.cleaned_data['rss_url']
 			frame_height = form.cleaned_data['frame_height']
 			frame_width = form.cleaned_data['frame_width']
+			width = str(frame_width)
+			height = str(frame_height)
 			#Generate the HTML code to create the widget based on the the information the user entered
-			widget_code = "<iframe src='" + "http://127.0.0.1:8000/feed/" + "' height='" + frame_height + "' width='" + frame_width + "'></iframe>"
-	return render(request, 'feed/widget_gen.html', {'form': form})
-
+			iframe_url = "http://127.0.0.1:8000/feed/"
+			widget_code = "<iframe src='" + "http://127.0.0.1:8000/feed/" + "' height='" + height + "' width='" + width + "'></iframe>"
+	return render(request, 'feed/widget_gen.html', {'form': form, 'widget_code':widget_code, 'iframe_url':iframe_url, 'width':width, 'height':height})
