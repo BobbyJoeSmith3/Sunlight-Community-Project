@@ -20,18 +20,19 @@
 
 
 <div>
-
-
-Preview your widget:
 <br>
-<iframe src={{iframe_url}} width={{width}} height={{height}}></iframe>
+<div class="widget_holder">
+Preview your widget:
+	<br>
+	{% if iframe_url != "" %}
+	<iframe src={{iframe_url}} width={{width}} height={{height}}></iframe>
 
+	<br><br>Paste this code into your HTML to embed this widget in your page.
+	<br>
+	<code>{{widget_code}}</code>
 
-
-
-<br><br>Copy the code below into your HTML to embed this widget in your page.
-
-<code>{{widget_code}}</code>
+	{% endif %}
+</div>
 
 </body>
 
